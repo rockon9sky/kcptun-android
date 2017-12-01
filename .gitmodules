@@ -1,8 +1,8 @@
-[submodule "src/go"]
-	path = src/go
-	url = https://github.com/shadowsocks/go.git
-	branch = shadowsocks
 [submodule "src/kcptun"]
 	path = src/kcptun
-	url = https://github.com/shadowsocks/kcptun.git
-	branch = shadowsocks
+	url = https://github.com/rockon9sky/custom-kcptun
+	branch = master
+[submodule "src/custom-go"]
+	path = src/custom-go
+	url = https://github.com/rockon9sky/custom-go
+	branch = master

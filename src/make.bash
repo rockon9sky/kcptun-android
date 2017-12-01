@@ -42,15 +42,15 @@ if [ ! -d "$ANDROID_X86_TOOLCHAIN" ]; then
         --api $MIN_API --install-dir $ANDROID_X86_TOOLCHAIN
 fi
 
-if [ ! -d "$DIR/go/bin" ]; then
+if [ ! -d "$DIR/custom-go/bin" ]; then
     echo "Build the custom go"
 
-    pushd $DIR/go/src
+    pushd $DIR/custom-go/src
     try ./make.bash
     popd
 fi
 
-export GOROOT=$DIR/go
+export GOROOT=$DIR/custom-go
 export GOPATH=$DEPS/gopath
 export GOBIN=$GOPATH/bin
 mkdir -p $GOBIN

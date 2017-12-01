@@ -10,7 +10,7 @@ organization := "com.github.shadowsocks"
 version := "0.0.6"
 versionCode := Some(6)
 
-platformTarget := "android-26"
+platformTarget := "android-27"
 
 compileOrder := CompileOrder.JavaThenScala
 javacOptions ++= "-source" :: "1.7" :: "-target" :: "1.7" :: Nil
